@@ -87,28 +87,52 @@ main {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 8px;
 }
+
+
     
 .div1 {
     grid-column: span 2 / span 2;
+    display: flex;
+    justify-content: space-between;
 }
 
 .div2 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
+    display: flex;
+    justify-content: space-between;
 }
 
 .div3 {
     grid-column: span 2 / span 2;
     grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
 }
 
 .div4 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 2;
+    
 }
-        
+.parent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}   
+
+.empanada img{
+    max-width: 80px;
+    height: auto;
+}
+.empanada {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
