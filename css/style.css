@@ -14,6 +14,8 @@ header hr {
   border: none;   
 }
 
+
+
 footer hr {
     background-color: green;
     height: 5px;
@@ -74,6 +76,10 @@ main {
     flex: 1;
 }
 
+.info_plato ul {
+    list-style: none;
+}
+
 .vuelta {
     display: flex;
     justify-content: end;
@@ -96,43 +102,81 @@ main {
 .div1 {
     grid-column: span 2 / span 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #C1DBB3;
+    border-radius: 10px;
 }
 
 .div2 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #C1DBB3;
+    border-radius: 10px;
 }
 
 .div3 {
     grid-column: span 2 / span 2;
     grid-row-start: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #C1DBB3;
+    border-radius: 10px;
 }
 
 .div4 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 2;
-    
+    width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #C1DBB3;
+    border-radius: 10px;
+
 }
-.parent img {
-    max-width: 100%;
+    
+.division img{
+    max-width: 30%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }   
 
-.empanada img{
-    max-width: 80px;
-    height: auto;
-}
-.empanada {
-   display: flex;
+
+.division {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 
+
+.pp {
+    display: flex;
+    align-items: flex-start; /* alinea arriba */
+    gap: 15px; /* espacio entre imagen y texto */
+}
+
+.pp img {
+    height: 150px;
+    border-radius: 8px;
+}
+
+.info_plato {
+    flex: 1; /* que el texto use el resto del espacio */
+    white-space: normal; /* permite que baje de línea */
+    line-height: 20px;
+}
