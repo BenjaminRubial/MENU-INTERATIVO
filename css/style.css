@@ -14,8 +14,6 @@ header hr {
   border: none;   
 }
 
-
-
 footer hr {
     background-color: green;
     height: 5px;
@@ -60,10 +58,8 @@ main hr {
 }
 
 footer {
-  
   padding: 10px;
   text-align: center;
-
 }
 
 body {
@@ -90,20 +86,18 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .parent {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 8px;
+    gap: 10px;
 }
-
-
-    
+  
 .div1 {
     grid-column: span 2 / span 2;
     display: flex;
     justify-content: center;
-    width: 800px;
+    max-width: 100%;
+    width: auto;
     margin: 20px auto;
     padding: 15px;
     background-color: white;
@@ -116,7 +110,8 @@ main {
     grid-column-start: 3;
     display: flex;
     justify-content: center;
-    width: 800px;
+    max-width: 100%;
+    width: auto;
     margin: 20px auto;
     padding: 15px;
     background-color: white;
@@ -129,7 +124,8 @@ main {
     grid-row-start: 2;
     display: flex;
     justify-content: center;
-    width: 800px;
+    max-width: 100%;
+    width: auto;
     margin: 20px auto;
     padding: 15px;
     background-color: white;
@@ -141,7 +137,8 @@ main {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 2;
-    width: 800px;
+    max-width: 100%;
+    width: auto;
     margin: 20px auto;
     padding: 15px;
     background-color: white;
@@ -156,13 +153,11 @@ main {
     border-radius: 10px;
 }   
 
-
 .division {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .pp {
     display: flex;
